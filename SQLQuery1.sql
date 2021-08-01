@@ -26,3 +26,13 @@ alter table employee_payroll add gender char(1);
 
 update employee_payroll set gender = 'M';
 update employee_payroll set gender = 'F' where name = 'Pavani';
+
+select sum(salary) as Totalsalary, gender from employee_payroll group by gender;
+
+select avg(salary) as Totalsalary , gender from employee_payroll group by gender;
+
+select min(salary) as Totalsalary, gender from employee_payroll group by gender;
+
+select max(salary) as Totalsalary, gender from employee_payroll group by gender;
+
+select count(salary) as Totalsalary from employee_payroll;
