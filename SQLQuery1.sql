@@ -15,3 +15,9 @@ startDate date
 insert into employee_payroll values('Vivek',45432,'1999-06-11'),('Pavani',65784,'2000-02-17');
 
 select * from employee_payroll; 
+
+-------UC4----------
+insert into employee_payroll values('Kumar',76548,'2001-10-28');
+
+select  salary, name  from employee_payroll where name='Kumar';
+select salary , name from employee_payroll where startDate between cast('2000-01-01' as date) and  getdate(); 
