@@ -10,3 +10,6 @@ name varchar (100) not null,
 salary float,
 startDate date
 )
+
+------uc2--------
+insert into employee_payroll values('Vivek',45432,'1999-06-11'),('Pavani',65784,'2000-02-17');
