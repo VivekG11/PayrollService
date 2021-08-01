@@ -21,3 +21,8 @@ insert into employee_payroll values('Kumar',76548,'2001-10-28');
 
 select  salary, name  from employee_payroll where name='Kumar';
 select salary , name from employee_payroll where startDate between cast('2000-01-01' as date) and  getdate(); 
+
+alter table employee_payroll add gender char(1);
+
+update employee_payroll set gender = 'M';
+update employee_payroll set gender = 'F' where name = 'Pavani';
